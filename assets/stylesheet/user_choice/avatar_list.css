@@ -1,0 +1,47 @@
+.avatar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: lightgray;
+    width: 100%;
+}
+
+.avatar-list > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3%;
+    width: 60%;
+}
+
+.avatar-list-element > a{
+    transition: color 200ms ease-in-out;
+    text-decoration: none;
+    color: gray;
+}
+
+.avatar-list-element:hover{
+    cursor: pointer;
+}
+
+.avatar-list-element:hover > a{
+    color: white;
+}
+
+.avatar-list-element:hover > a > .avatar-list-image > img{
+    border: 0.2vw solid white;
+}
+
+.avatar-list-element > a > div > img {
+    border: 0.2vw solid rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: border 200ms ease-in-out;
+}
+
+.avatar-list-element > a > div > p {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.2vw;
+}

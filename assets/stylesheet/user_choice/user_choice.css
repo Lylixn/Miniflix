@@ -1,0 +1,21 @@
+.user-choice {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.user-choice > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-choice > div > h1 {
+    font-size: 4vw;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,21 @@
+.manage-account {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.manage-account > a {
+    padding: 0.6% 2%;
+    border: 1px gray solid;
+    text-decoration: none;
+    color: gray;
+    font-size: 1.2vw;
+    transition: color 150ms ease-in-out, border 150ms ease-in-out;
+}
+
+.manage-account > a:hover {
+    color: white;
+    border: 1px white solid;
+    cursor: pointer;
+}
