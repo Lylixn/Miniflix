@@ -1,0 +1,63 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: calc(10px + 0.4vw) 3vw;
+    background-image: linear-gradient(180deg, #1c1c1c 0%, rgba(0,0,0,0) 100%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: background-color 400ms ease-in-out;
+}
+
+.header-scroll {
+    background-color: #141414;
+}
+
+header > div {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+header > div > .header-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header > div > .header-logo > img{
+    width: 10vw;
+    min-width: 60px;
+    max-width: 150px;
+}
+
+header .desktop-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header .desktop-nav > div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+header .desktop-nav > div > .active {
+    color: white;
+}
+header .desktop-nav > div > .active:hover {
+    color: white;
+}
+
+header .desktop-nav > div > a {
+    color: lightgray;
+    transition: color 150ms ease-in-out;
+    cursor: pointer;
+    font-size: calc(10px + 0.3vw);
+}
+
+header .desktop-nav > div > a:hover {
+    color: #a4a4a4;
+}

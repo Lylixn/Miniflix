@@ -9,4 +9,37 @@ body {
 * {
     padding: 0;
     margin: 0;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.primary-button {
+    background-color: white;
+    padding: 0.6vw 2vw;
+    font-size: calc(10px + 0.5vw);
+    border-radius: 5px;
+    color: black;
+    font-weight: bolder;
+    transition: background-color 150ms ease-in-out;
+}
+
+.primary-button:hover {
+    background-color: #c1c1c1;
+}
+
+.secondary-button {
+    background-color: rgba(128, 128, 128, 0.6);
+    padding: 0.6vw 2vw;
+    font-size: calc(10px + 0.5vw);
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    transition: background-color 150ms ease-in-out;
+}
+
+.secondary-button:hover {
+    background-color: rgba(98, 98, 98, 0.6);
 }
