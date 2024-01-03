@@ -7,12 +7,10 @@ filmListArray.forEach((filmList) => {
     filmListAction.forEach((action) => {
         if (action.classList.contains("film-list-action-left")) {
             action.addEventListener("click", () => {
-                console.log("clicked");
                 filmListList.scrollLeft -= filmListList.offsetWidth;
             });
         } else {
             action.addEventListener("click", () => {
-                console.log("clicked");
                 filmListList.scrollLeft += filmListList.offsetWidth;
             });
         }
