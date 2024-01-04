@@ -1,0 +1,48 @@
+.code-modal {
+    background-color: rgba(20, 20, 20, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.code-modal > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.code {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.code > p {
+    font-size: calc(8px + 0.5vw);
+}
+
+.code > div > label > input {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    outline: none;
+    width: 3.2vw;
+    height: 3.2vw;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    transition: transform 200ms ease-in-out;
+}
+
+.code > div > label > input:focus {
+    transform: scale(1.1);
+}
+
+.code > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}

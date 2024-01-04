@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Miniflix</title>
+
+        <link rel="stylesheet" href="assets/stylesheet/main.css">
+        <link rel="stylesheet" href="assets/stylesheet/player/code_modal.css">
+        <link rel="stylesheet" href="assets/stylesheet/player/video.css">
+        <link rel="stylesheet" href="assets/stylesheet/player/background.css">
+
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+
+        <div class="code-modal" id="code-modal">
+            <div>
+                <div class="code">
+                    <p>Entrez votre code PIN pour regardez des contenus en accès limité.</p>
+                    <div id="code">
+                        <label>
+                            <input type="password" />
+                        </label>
+                        <label>
+                            <input type="password" />
+                        </label>
+                        <label>
+                            <input type="password" />
+                        </label>
+                        <label>
+                            <input type="password" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="player">
+            <video id="video">
+                <source src="assets/videos/rickroll.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </body>
+</html>
+
+<script src="assets/javascript/code.js"></script>

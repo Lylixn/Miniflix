@@ -22,6 +22,7 @@ footer > .footer-list > div > a {
     color: gray;
     transition: color 200ms ease-in-out;
     cursor: pointer;
+    font-size: calc(6px + 0.5vw);
 }
 
 footer > .footer-list > div > a:hover {
