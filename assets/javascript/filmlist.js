@@ -16,6 +16,7 @@ filmListArray.forEach((filmList) => {
     let filmListAction = filmList.querySelectorAll(".film-list-action");
     let filmListList = filmList.querySelector(".film-list-list");
 
+    // scroll
     filmListAction.forEach((action) => {
         if (action.classList.contains("film-list-action-left")) {
             action.addEventListener("click", () => {
@@ -26,5 +27,15 @@ filmListArray.forEach((filmList) => {
                 animationScroll(filmListList, 1)
             });
         }
+    });
+
+    // preview
+    let filmListListChild = filmListList.querySelectorAll(".film-list-element");
+    let filmPreview = new Preview();
+
+    filmListListChild.forEach((element) => {
+        element.addEventListener("mouseenter", () => {
+            filmPreview.setPreview(element, element.querySelector("img").src);
+        });
     });
 });

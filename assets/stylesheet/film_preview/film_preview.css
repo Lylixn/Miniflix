@@ -1,0 +1,78 @@
+.film-preview {
+    position: absolute;
+    display: none;
+    border-radius: 5px;
+    z-index: 2;
+    transition: transform 0.2s ease-in-out;
+    background-color: #141414;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 16vw;
+}
+
+.film-preview > img {
+    width: 16vw;
+    height: 9vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filmpreview-active {
+    transform: scale(1.6);
+}
+
+.filmpreview-content {
+    display: none;
+    margin: 10px;
+}
+
+.filmpreview-content-active > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filmpreview-content > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.filmpreview-content > div > div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: calc(8px + 0.2vw);
+}
+
+.filmpreview-content > div > div > .empty-icon {
+    border-radius: 1.2vw;
+    border: 1px solid #8d8d8d;
+}
+
+.filmpreview-content > div > div > .empty-icon:hover {
+    border: 1px solid #fff;
+}
+
+.filmpreview-content > div > div > img {
+    width: 1.2vw;
+    height: 1.2vw;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.filmpreview-content > div > div > img:hover {
+    transform: scale(1.05);
+}
+
+.filmpreview-content > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.filmpreview-content > ul > li {
+    font-size: calc(5px + 0.3vw);
+}

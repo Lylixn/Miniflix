@@ -8,10 +8,34 @@
         <link rel="stylesheet" href="assets/stylesheet/header/header.css">
         <link rel="stylesheet" href="assets/stylesheet/new_film/new_film.css">
         <link rel="stylesheet" href="assets/stylesheet/film_list/film-list.css">
+        <link rel="stylesheet" href="assets/stylesheet/film_preview/film_preview.css">
 
         <link rel="icon" href="favicon.ico">
     </head>
     <body>
+
+        <div class="film-preview" id="filmpreview">
+            <img src="" alt="" />
+            <div class="filmpreview-content">
+                <div>
+                    <div>
+                        <img src="assets/images/play.png" alt="film" />
+                        <img src="assets/images/add.png" class="empty-icon" alt="add" />
+                        <img src="assets/images/like.png" class="empty-icon" alt="like" />
+                    </div>
+                    <div>
+                        <img src="assets/images/info.png" class="empty-icon" alt="like" />
+                    </div>
+                </div>
+                <ul>
+                    <li>Thriller</li>
+                    <li>Actions</li>
+                    <li>Film</li>
+                    <li>Série</li>
+                </ul>
+            </div>
+        </div>
+
         <header id="header">
             <div>
                 <div class="header-logo">
@@ -181,4 +205,5 @@
 </html>
 
 <script src="assets/javascript/background.js"></script>
+<script src="assets/javascript/filmpreview.js"></script>
 <script src="assets/javascript/filmlist.js"></script>
