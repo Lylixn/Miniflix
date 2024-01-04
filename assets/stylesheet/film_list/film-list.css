@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 4vw 3vw;
+    margin: 50px 0;
 }
 
 .film-list-bar {
@@ -10,12 +10,20 @@
     flex-direction: row;
 }
 
+.film-list > .film-list-title {
+    margin-left: 2vw;
+}
+
+.film-list > .film-list-title > h2 {
+    font-size: calc(12px + 0.9vw);
+}
+
 .film-list-list {
     width: 100%;
     display: flex;
     flex-direction: row;
-    overflow-x: hidden;
     gap: 10px;
+    overflow-x: hidden;
 }
 
 .film-list-action {
@@ -44,12 +52,17 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 350px;
-    height: 196px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.film-list-element:hover {
+    transform: scale(0.95);
 }
 
 .film-list-element > img{
     border-radius: 5px;
+    width: 16vw;
+    height: 9vw;
 }
