@@ -43,3 +43,55 @@ a {
 .secondary-button:hover {
     background-color: rgba(98, 98, 98, 0.6);
 }
+
+.searchbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.searchbar > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.active-searchbar {
+    background-color: rgba(20, 20, 20, 0.8);
+    border: 1px solid #ffffff;
+    transition: border 150ms ease-in-out, background-color 150ms ease-in-out;
+}
+
+.searchbar > div > label > input {
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    outline: none;
+    border: 0;
+    width: 0;
+    transition: width 150ms ease-in-out;
+    font-size: calc(6px + 0.4vw);
+}
+
+.active-searchbar > div > label > input {
+    height: 100%;
+    width: 10vw;
+}
+
+.searchbar > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.searchbar > div > div > img {
+    width: 1vw;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.searchbar > div > div > img:hover {
+    transform: scale(1.1);
+}
