@@ -61,6 +61,7 @@ a {
     background-color: rgba(20, 20, 20, 0.8);
     border: 1px solid #ffffff;
     transition: border 150ms ease-in-out, background-color 150ms ease-in-out;
+    border-radius: 5px;
 }
 
 .searchbar > div > label > input {

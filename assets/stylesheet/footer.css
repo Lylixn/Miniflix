@@ -22,7 +22,7 @@ footer > .footer-list > div > a {
     color: gray;
     transition: color 200ms ease-in-out;
     cursor: pointer;
-    font-size: calc(6px + 0.5vw);
+    font-size: calc(10px + 0.3vw);
 }
 
 footer > .footer-list > div > a:hover {
@@ -53,6 +53,8 @@ footer > .footer-social > div {
 
 footer > .footer-social > div > a > img {
     width: 1.5vw;
+    min-width: 20px;
+    min-height: 20px;
     height: 1.5vw;
     border-radius: 10px;
 }
@@ -63,4 +65,26 @@ footer > .footer-social > div > a:hover {
 
 footer > .footer-social > div > a {
     transition: transform 200ms ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+    footer {
+        padding: 5vw 0;
+    }
+
+    footer > .footer-list {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    footer > .footer-list > div {
+        gap: 10px;
+    }
+
+    footer > .footer-social {
+        padding: 0 20vw;
+    }
+
 }
