@@ -15,7 +15,7 @@
 }
 
 .film-list > .film-list-title > h2 {
-    font-size: calc(12px + 0.9vw);
+    font-size: calc(12px + 0.8vw);
 }
 
 .film-list-list {
